@@ -481,7 +481,7 @@ div, p, a, li, label, input {
 
 /*Banner*/
 .banner {
-  background-image: url(../../../assets/images/banner.png);
+  background-image: url(../images/banner.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -507,7 +507,7 @@ div, p, a, li, label, input {
 
 @media (max-width: 374px) {
   .banner {
-    background-image: url(../../../assets/images/banner-sm.png);
+    background-image: url(../images/banner-sm.png);
     padding: 164px 0; }
   .slogan {
     font-size: 16px;
