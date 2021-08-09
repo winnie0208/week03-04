@@ -1,0 +1,297 @@
+//*共用元素*// 
+/* product-menu */
+.product-menu{
+    display: flex;
+}
+.product-menu-icon{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.product-menu h3{
+    font-size: 32px;
+    line-height: 43px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-menu-item{
+    width: 33.3333%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $baby-gray;
+}
+.underline{
+    border-bottom: 8px solid $main-red;
+}
+@media(max-width:767px){
+    .product-menu-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .product-menu h3{
+        font-size: 24px;
+    }
+    .product-menu-item{
+        height: 60px;
+    }
+}
+@media(max-width:374px){
+    .product-menu-icon{
+        width: 15px;
+        height: 15px;
+        margin-right: 0;
+    }
+    .product-menu h3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .product-menu-item{
+        height: 30px;
+    }
+    .underline{
+        border-bottom: 4px solid $main-red;
+    }
+}
+/* Product-Card */
+.product-image{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 164px;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-name h4 a{
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.product-name h4 :hover{
+    color:$dark-red;
+}
+.product-price{
+    font-size: 24px;
+    line-height: 36px;
+    color: $main-red;
+    text-transform: uppercase;
+}
+.color-group{
+    display: flex;
+}
+.color-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+@media(max-width:374px){
+    .product-name h4 a{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .product-price{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .color-item{
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        margin-right: 4px;
+    }
+}
+/*Banner*/
+.banners{
+    display: flex;
+}
+.banner-image{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 50%;
+    height: 304px;
+}
+.banner1{
+    background-image: url(../images/banner-1.png);
+}
+.banner2{
+    background-image: url(../images/banner-2.png);
+}
+.banner3{
+    background-image: url(../images/banner-3.png);
+}
+.banner4{
+    background-image: url(../images/product-2-color.png);
+}
+@media(max-width:374px){
+    .banner-image{
+        height: 148px;
+    } 
+}
+/*其他*/ 
+.main-box1{
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+@media(max-width:767px){
+    .main-box1{
+        padding-top: 56px;
+        padding-bottom: 96px;
+    }
+}
+@media(max-width:374px){
+    .main-box1{
+        padding-top: 32px;
+        padding-bottom: 56px;
+    }
+}
+.product-title{
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.product-title span{
+    font-size: 42px;
+    line-height: 63px; 
+    font-weight: 500;
+}
+@media(max-width:767px){
+    .product-title{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 32px;
+    }
+    .product-title span{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+@media(max-width:374px){
+    .product-title{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .product-title span{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+//*自訂otipcal & sunglass*// 
+.product-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+.optical-card{
+    width: 23%;
+    margin-bottom: 104px;
+}
+.optical-card:nth-last-child(-n+4){
+    margin-bottom: 0;
+}
+.sunglass-card{
+    width: 32%;
+    margin-bottom: 104px;
+}
+.sunglass-card:nth-last-child(-n+4){
+    margin-bottom: 0;
+}
+@media(max-width:767px){
+    .product-group{
+        margin-bottom: 65px;
+    }
+    .optical-card{
+        width: 48%;
+        margin-bottom: 72px;
+    }
+    .optical-card:nth-last-child(-n+4){
+        margin-bottom: 72px;
+    }
+    .optical-card:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+    .sunglass-card{
+        width: 48%;
+    }
+    .sunglass-card:nth-last-child(-n+3){
+        margin-bottom: 72px;
+    }
+    .sunglass-card:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+}
+@media(max-width:374px){
+    .product-group{
+        margin-bottom: 40px;
+    }
+    .optical-card{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .optical-card:nth-last-child(-n+4){
+        margin-bottom: 32px;
+    }
+    .optical-card:nth-last-child(-n+2){
+        margin-bottom: 32px;
+    }
+    .optical-card:nth-last-child(1){
+        margin-bottom: 0;
+    }
+    .sunglass-card{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .sunglass-card:nth-last-child(-n+3){
+        margin-bottom: 32px;
+    }
+    .sunglass-card:nth-last-child(-n+2){
+        margin-bottom: 32px;
+    }
+    .sunglass-card:nth-last-child(1){
+        margin-bottom: 0px;
+    }
+}
+.product-1{
+    background-image: url(../images/products-1.png);
+}
+.product-2{
+    background-image: url(../images/products-7.jpg);
+}
+.product-3{
+    background-image: url(../images/products-8.jpg);
+}
+.product-4{
+    background-image: url(../images/products-10.jpg);
+}
+.product-5{
+    background-image: url(../images/products-9.jpg);
+}
+.product-6{
+    background-image: url(../images/products-12.jpg);
+}
+.product-7{
+    background-image: url(../images/products-4.png);
+}
+.product-8{
+    background-image: url(../images/products-3.png);
+}
+.product-9{
+    background-image: url(../images/products-5.jpg);
+}
+.product-10{
+    background-image: url(../images/products-6.jpg);
+}
+.product-11{
+    background-image: url(../images/products-11.jpg);
+}
+.product-12{
+    background-image: url(../images/products-5.jpg);
+}

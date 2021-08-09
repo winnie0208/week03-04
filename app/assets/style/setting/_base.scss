@@ -1,0 +1,31 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    color:$black;
+}
+a:hover{
+	color: $black;
+}
+/*Font*/ 
+body{
+	font-family: "Source Han Sans TW", "Roboto", sans-serif;
+    color: $black;
+}
+h2{
+	font-size: 48px;
+	line-height: 70px;
+}
+div, p, a, li, label, input{
+    font-family: "Source Han Sans TW", "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
